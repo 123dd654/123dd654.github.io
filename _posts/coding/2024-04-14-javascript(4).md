@@ -3,7 +3,7 @@ layout: post
 title: if문,다중if문
 date: 2024-04-14 17:29 +0900
 description: 자바스크립트 데이터 제어하기
-image: https://github.com/123dd654/123dd654.github.io/assets/161431124/4ea8e722-f46c-4118-bccf-76f8e82f8c4b
+image: ../assets/img/blog.jpg
 category: 자바스크립트
 tags: if문 다중if문
 published: true

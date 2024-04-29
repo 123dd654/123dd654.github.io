@@ -3,7 +3,7 @@ layout: post
 title: 연산자
 date: 2024-04-07 17:29 +0900
 description: 자바스크립트
-image: https://github.com/123dd654/123dd654.github.io/assets/161431124/971bb234-4aa6-4812-92bf-4395e8301c50
+image: ../assets/img/blog.jpg
 category: 자바스크립트
 tags: 연산자
 published: true
