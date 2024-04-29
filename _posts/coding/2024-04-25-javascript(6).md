@@ -10,8 +10,6 @@ published: true
 sitemap: true
 ---
 
-[링크](https://github.com/123dd654/123dd654.github.io)
-
 
 ## 프로그램의 흐름을 제어하기<br />
 

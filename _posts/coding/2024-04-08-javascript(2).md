@@ -10,7 +10,6 @@ published: true
 sitemap: true
 ---
 
-[링크](https://github.com/123dd654/123dd654.github.io)
 
 # 자바스크립트 자료형에 대해.<br />
 
