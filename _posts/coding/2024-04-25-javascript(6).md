@@ -33,7 +33,7 @@ do {// 실행될 코드} while (조건);
     let num = 1;            //초깃값;
 
     console.log("06. while문")
-    while (num &lt;= 10) {     //조건식;
+    while (num <= 10) {     //조건식;
         console.log(num);   //실행문
         num++;              //증감값;
     }
@@ -61,7 +61,7 @@ do {// 실행될 코드} while (조건);
 
 ````javascript 
 {
-    for (let i = 1; i &lt;= 10; i++) {     //초깃값; 조건식; 증감값;
+    for (let i = 1; i <= 10; i++) {     //초깃값; 조건식; 증감값;
         console.log(i);                    //실행문
     }
 }
@@ -104,8 +104,8 @@ do {// 실행될 코드} while (조건);
 
 ````javascript 
 {
-    for (let i = 1; i &lt;= 10; i++) {
-        for (let j = 1; j &lt;= 10; j++) {
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 10; j++) {
             console.log(i, j)
         }
     }
