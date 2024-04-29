@@ -3,7 +3,7 @@ layout: post
 title: 중첩 if문,삼항연산자
 date: 2024-04-15 20:29 +0900
 description: 자바스크립트 데이터 제어하기(2)
-image: ../assets/img/blog.jpg
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/000326a9-c37d-49dc-9c24-9cd836375fa8
 category: 자바스크립트
 tags: 중첩if문 if문생략 삼항연산자
 published: true
