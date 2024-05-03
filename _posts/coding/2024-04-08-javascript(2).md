@@ -3,7 +3,7 @@ layout: post
 title: 자료형
 date: 2024-04-07 17:29 +0900
 description: 자바스크립트
-image: ../assets/img/blog.jpg
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/e9030899-ce32-4ffc-aa3d-ae96d6a7dc42
 category: 자바스크립트
 tags: 자료형
 published: true

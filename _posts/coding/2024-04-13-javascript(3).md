@@ -3,9 +3,9 @@ layout: post
 title: 익명함수,매개변수함수
 date: 2024-04-13 17:29 +0900
 description: 자바스크립트 데이터 실행하기
-image: ../assets/img/blog.jpg
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/f8ccbc25-b73f-45b8-b9f0-8f724ebf1127
 category: 자바스크립트
-tags: 익명함수  매개변수함수
+tags: 익명함수 매개변수함수
 published: true
 sitemap: true
 ---
