@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 자바스크립트 오답노트(1) 
+title: 자바스크립트 오답노트 
 date: 2024-04-19 14:54 +0900
 description: 자바스크립트
-image: ../assets/img/blog.jpg
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/d41f1cc4-f421-457b-a765-4a0750811ae9
 category: 오답노트
 tags:
 published: true

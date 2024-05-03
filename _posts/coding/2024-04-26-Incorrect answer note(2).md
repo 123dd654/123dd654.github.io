@@ -3,7 +3,7 @@ layout: post
 title: 자바스크립트 오답노트(2) 
 date: 2024-04-26 14:54 +0900
 description: 자바스크립트
-image: ../assets/img/blog.jpg
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/7eee5dd9-7eb0-4edc-9c7b-07c9464f9946
 category: 오답노트
 tags: 자바스크립트 오답노트 문제풀이
 published: true
