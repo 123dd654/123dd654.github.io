@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 중첩 if문,삼항연산자
+title: 중첩 if문,삼항연산자란?
 date: 2024-04-15 20:29 +0900
 description: 자바스크립트 데이터 제어하기(2)
-image: ../assets/img/blog.jpg
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/1c57e978-a957-426a-9cd8-0162dad2f03c
 category: 자바스크립트
 tags: 중첩if문 if문생략 삼항연산자
 published: true

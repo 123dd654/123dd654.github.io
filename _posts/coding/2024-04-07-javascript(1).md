@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 연산자
+title: 연산자란?
 date: 2024-04-07 17:29 +0900
 description: 자바스크립트
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/4bca9465-c91f-48ab-92ed-0eef35542c0f

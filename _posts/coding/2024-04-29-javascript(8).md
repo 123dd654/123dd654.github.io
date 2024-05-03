@@ -1,9 +1,9 @@
 ---
 layout: post
-title: break문 continue문
+title: break문 continue문이란?
 date: 2024-04-29 20:29 +0900
 description: 자바스크립트 데이터 제어하기(4)
-image: ../assets/img/blog.jpg
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/281e55ed-b9ca-40bb-b34f-3bd487895aeb
 category: 자바스크립트
 tags: break문 continue문
 published: true

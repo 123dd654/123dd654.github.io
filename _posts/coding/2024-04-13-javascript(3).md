@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 익명함수,매개변수함수
+title: 익명함수,매개변수함수란?
 date: 2024-04-13 17:29 +0900
 description: 자바스크립트 데이터 실행하기
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/f8ccbc25-b73f-45b8-b9f0-8f724ebf1127
