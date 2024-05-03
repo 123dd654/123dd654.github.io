@@ -2,7 +2,7 @@
 layout: post
 title: 익명함수,매개변수함수
 date: 2024-04-13 17:29 +0900
-description: 자바스크립트 함수에 대하여
+description: 자바스크립트 데이터 실행하기
 image: ../assets/img/blog.jpg
 category: 자바스크립트
 tags: 익명함수  매개변수함수
@@ -12,7 +12,7 @@ sitemap: true
 
 
 
-## 자바스크립트 함수 두번째, 세번째<br />
+## 프로그램 실행하기<br />
 
 ### 01. 익명 함수란?               
 익명 함수는 이름이 없는 함수를 가리킵니다.<br>

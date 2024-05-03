@@ -2,7 +2,7 @@
 layout: post
 title: 자바스크립트
 date: 2024-04-05 17:29 +0900
-description: 자바스크립트 함수에 대하여
+description: 자바스크립트 데이터 실행하기
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/d5cf374b-d4e4-4ced-b2ac-5f2f9e6dfcb9
 category: 자바스크립트
 tags: 함수
@@ -12,7 +12,7 @@ sitemap: true
 
 
 
-# 자바스크립트 함수 첫번째.<br />
+## 자바스크립트 실행하기<br />
 
 01. 선언적 함수란?
 <br />                
