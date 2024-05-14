@@ -4,7 +4,7 @@ title: do while문, for문, 중첩 for문이란?
 date: 2024-04-25 20:29 +0900
 description: 자바스크립트 데이터 제어하기(3)
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/a5900dca-a8ac-496e-85d1-01507ec5ef22
-category: 자바스크립트
+category: coding
 tags: dowhile문 for문 중첩for문
 published: true
 sitemap: true

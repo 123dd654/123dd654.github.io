@@ -4,7 +4,7 @@ title: 자바스크립트 오답노트
 date: 2024-04-19 14:54 +0900
 description: 자바스크립트
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/25a51da0-a28a-4a5e-a9b9-9127cd53349c
-category: 오답노트
+category: coding
 tags: 자바스크립트 오답노트
 published: true
 sitemap: true

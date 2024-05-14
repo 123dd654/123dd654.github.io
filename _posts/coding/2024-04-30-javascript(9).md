@@ -4,7 +4,7 @@ title: 리턴값 함수 매개+리턴값 함수 화살표 함수이란?
 date: 2024-04-30 20:29 +0900
 description: 자바스크립트 데이터 실행하기(3)
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/d7558034-68be-4384-8bad-fe06ba8cd109
-category: 자바스크립트
+category: coding
 tags: 리턴값 함수 매개+리턴값 함수 화살표함수
 published: true
 sitemap: true

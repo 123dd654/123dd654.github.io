@@ -4,7 +4,7 @@ title: switch, while문이란?
 date: 2024-04-18 20:29 +0900
 description: 자바스크립트 데이터 제어하기(2)
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/b0318c94-ea53-46ed-80cb-d812c2a9cfc2
-category: 자바스크립트
+category: coding
 tags: switch문 while문
 published: true
 sitemap: true
