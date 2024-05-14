@@ -4,7 +4,7 @@ title: 선언적 함수란?
 date: 2024-04-05 17:29 +0900
 description: 자바스크립트 데이터 실행하기
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/259eefec-485f-4de7-809a-9678444c08c2
-category: 자바스크립트
+category: coding
 tags: 함수
 published: true
 sitemap: true
