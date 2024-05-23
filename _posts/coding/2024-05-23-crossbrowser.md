@@ -3,7 +3,7 @@ layout: post
 title: cross-browser
 date: 2024-05-23 10:29 +0900
 description: cross-browser
-image: https://github.com/123dd654/123dd654.github.io/files/15419193/default.pdf
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/20c8148f-cf84-4cf9-8917-baa239539a3f
 category: coding
 tags: crossbrowser
 published: true
