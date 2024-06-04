@@ -3,7 +3,7 @@ layout: post
 title: 화살표 함수와 일반 함수의 차이점
 date: 2024-06-03 10:29 +0900
 description: 화살표 함수와 일반 함수의 차이점
-image: 
+image: https://github.com/123dd654/123dd654.github.io/assets/161431124/4d500b6f-80ce-4566-9f13-f861f80b263a
 category: coding
 tags: this
 published: true
