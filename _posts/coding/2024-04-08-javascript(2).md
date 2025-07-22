@@ -4,12 +4,11 @@ title: 자료형이란?
 date: 2024-04-07 17:29 +0900
 description: 자바스크립트
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/e9030899-ce32-4ffc-aa3d-ae96d6a7dc42
-category: coding
+category: 2024년도 공부내용
 tags: 자료형
 published: true
 sitemap: true
 ---
-
 
 # 자바스크립트 자료형에 대해.<br />
 
@@ -19,19 +18,20 @@ sitemap: true
 <br>
 
 ✤ 자료형의 종류 ✤
-````javascript 
+
+```javascript
     1. 기본 자료형(Primitive Data Types):
 
         * 정수형(Integer): 정수를 나타냅니다. 보통 정수형의 크기는 해당 프로그래밍 언어나 시스템에 따라 다르지만,일반적으로 정수형은 정수 값만을 표현합니다.
         * 실수형(Floating-point): 실수를 나타냅니다. 부동 소수점 방식으로 숫자를 저장하여 실수 값을 표현합니다.
         * 문자형(Character): 문자를 나타냅니다. 문자열은 여러 개의 문자로 이루어진 복합 자료형이며, 문자 자체를 나타내는 것은 문자형 자료형입니다.
         * 부울형(Boolean): 참(True) 또는 거짓(False)을 나타냅니다.
-    
+
     2. 복합 자료형(Composite Data Types):
-    
+
         * 배열(Array): 동일한 자료형의 요소들을 순차적으로 저장합니다. 각 요소는 인덱스를 통해 접근할 수 있습니다.
         * 구조체(Structure): 서로 다른 자료형의 요소들을 묶어서 하나의 자료형으로 만듭니다. 각 요소는 이름을 통해 접근할 수 있습니다.
         * 리스트(List): 배열과 유사하지만 크기가 동적으로 변할 수 있습니다. 따라서 리스트의 크기를 미리 지정할 필요가 없습니다.
         * 튜플(Tuple): 리스트와 유사하지만 변경할 수 없는(immutable) 요소들을 저장합니다.
         * 사전(Dictionary 또는 Map): 키-값 쌍으로 데이터를 저장합니다. 특정 키를 이용하여 값을 검색하거나 수정할 수 있습니다.
-````
+```

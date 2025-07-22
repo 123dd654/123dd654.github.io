@@ -4,16 +4,16 @@ title: do while문, for문, 중첩 for문이란?
 date: 2024-04-25 20:29 +0900
 description: 자바스크립트 데이터 제어하기(3)
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/a5900dca-a8ac-496e-85d1-01507ec5ef22
-category: coding
+category: 2024년도 공부내용
 tags: dowhile문 for문 중첩for문
 published: true
 sitemap: true
 ---
 
-
 ## 프로그램의 흐름을 제어하기<br />
 
-### 01. do while문이란?               
+### 01. do while문이란?
+
 JavaScript의 do...while문은 while문과 유사하지만,
 코드 블록을 먼저 실행하고 조건을 검사하는 차이점이 있습니다.
 do...while문은 코드 블록을 먼저 실행하고 나서 조건을 평가하므로, 코드 블록이 최소 한 번은 실행됩니다.
@@ -28,17 +28,18 @@ do {// 실행될 코드} while (조건);
 
 ✤ do while문 예시문 ✤
 
-````javascript 
+```javascript
 {
-    let num = 1;            //초깃값;
+  let num = 1; //초깃값;
 
-    console.log("06. while문")
-    while (num <= 10) {     //조건식;
-        console.log(num);   //실행문
-        num++;              //증감값;
-    }
+  console.log("06. while문");
+  while (num <= 10) {
+    //조건식;
+    console.log(num); //실행문
+    num++; //증감값;
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -49,8 +50,8 @@ do {// 실행될 코드} while (조건);
 </details>
 </div>
 
+### 02. for문이란?
 
-### 02. for문이란?               
 아래의 코드는 1부터 10까지의 숫자를 출력하는 for문입니다.
 먼저 변수 i를 1로 초기화하고, i가 10보다 작거나 같은 동안에만 반복합니다.
 반복할 때마다 i를 1씩 증가시키면서 각 숫자를 출력합니다.
@@ -59,13 +60,14 @@ do {// 실행될 코드} while (조건);
 
 ✤ for문 예시문 ✤
 
-````javascript 
+```javascript
 {
-    for (let i = 1; i <= 10; i++) {     //초깃값; 조건식; 증감값;
-        console.log(i);                    //실행문
-    }
+  for (let i = 1; i <= 10; i++) {
+    //초깃값; 조건식; 증감값;
+    console.log(i); //실행문
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -76,9 +78,8 @@ do {// 실행될 코드} while (조건);
 </details>
 </div>
 
+### 03. 중첩 for문이란?
 
-
-### 03. 중첩 for문이란?               
 중첩 for문은 하나의 for문 안에 다시 다른 for문이 들어가는 형태입니다.
 이를 사용하여 다차원 배열이나 이차원 데이터 구조를 탐색하거나 처리할 때 유용합니다.
 중첩 for문은 각각의 for문이 반복되는 동안 다른 for문을 포함하여 일정한 패턴을 반복적으로 실행합니다.
@@ -89,28 +90,29 @@ do {// 실행될 코드} while (조건);
 조건을 다시 평가하여 반복 여부를 결정합니다.
 
 중첩 for문의 기본 구조는 다음과 같습니다:
-````javascript
+
+```javascript
 {
-    for (초기식1; 조건1; 증감식1) {
+  for (초기식1; 조건1; 증감식1) {
     // 외부 for문의 실행 내용
     for (초기식2; 조건2; 증감식2) {
-        // 내부 for문의 실행 내용
-        }
+      // 내부 for문의 실행 내용
     }
+  }
 }
-````
+```
 
 ✤ 중첩 for문 예시문 ✤
 
-````javascript 
+```javascript
 {
-    for (let i = 1; i <= 10; i++) {
-        for (let j = 1; j <= 10; j++) {
-            console.log(i, j)
-        }
+  for (let i = 1; i <= 10; i++) {
+    for (let j = 1; j <= 10; j++) {
+      console.log(i, j);
     }
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -121,17 +123,10 @@ do {// 실행될 코드} while (조건);
 </details>
 </div>
 
-
 <br />
 <br />
 <br />
-
 
 여기까지 do while문, for문, 중첩 for문에 대해 알아봤습니다.
 도움이 되셨길 바라며 이만 마치겠습니다.
 고생하셨습니다.🫶😊
-
-
-
-
-                

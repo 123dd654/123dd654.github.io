@@ -4,7 +4,7 @@ title: TypeScript란
 date: 2024-06-07 10:29 +0900
 description: TypeScript란
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/be6ff23b-f5fd-4450-8a96-bc7d203324b4
-category: coding
+category: 2024년도 공부내용
 tags: TypeScript
 published: true
 sitemap: true

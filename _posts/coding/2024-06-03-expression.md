@@ -4,7 +4,7 @@ title: 화살표 함수와 일반 함수의 차이점
 date: 2024-06-03 10:29 +0900
 description: 화살표 함수와 일반 함수의 차이점
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/4d500b6f-80ce-4566-9f13-f861f80b263a
-category: coding
+category: 2024년도 공부내용
 tags: this
 published: true
 sitemap: true
@@ -21,33 +21,33 @@ sitemap: true
 
 예를 들어, 다음과 같은 코드가 있다고 가정해보겠습니다.
 
-````javascript
+```javascript
 var person = {
-    name: "John",
-    sayName: function() {
-        console.log(this.name);
-    }
+  name: "John",
+  sayName: function () {
+    console.log(this.name);
+  },
 };
 
 person.sayName(); // John
-````
+```
 
-* 위 코드에서 sayName 함수는 person 객체의 메서드입니다.
-sayName 함수가 호출될 때 this는 person 객체를 가리킵니다.
+- 위 코드에서 sayName 함수는 person 객체의 메서드입니다.
+  sayName 함수가 호출될 때 this는 person 객체를 가리킵니다.
 
 반면에, 다음과 같은 코드가 있다고 가정해보겠습니다.
 
-````javascript
-var sayName = ()=> {
-    console.log(this.name);
+```javascript
+var sayName = () => {
+  console.log(this.name);
 };
 
 sayName(); // undefined
-````
+```
 
-* 위 코드에서 sayName은 화살표 함수입니다.
-화살표 함수가 호출될 때 this는 상위 스코프의 this를 가리킵니다.
-하지만 상위 스코프에 name 속성이 없으므로 this.name은 undefined가 됩니다.
+- 위 코드에서 sayName은 화살표 함수입니다.
+  화살표 함수가 호출될 때 this는 상위 스코프의 this를 가리킵니다.
+  하지만 상위 스코프에 name 속성이 없으므로 this.name은 undefined가 됩니다.
 
 #### 02. 콜백 함수로 사용
 
@@ -70,15 +70,12 @@ sayName(); // undefined
 반면에 화살표 함수는 호이스팅이 발생하지 않습니다. 화살표 함수는 함수의 선언과 동시에 실행되기 때문입니다.
 위와 같이 화살표 함수는 일반 함수와 다른 특징을 가지고 있습니다.
 
-----------------------------------------------------
+---
 
 <br/>
 
 ✨결론✨
-* this 바인딩: 일반 함수의 this는 동적으로 결정되지만, 화살표 함수의 this는 상위 스코프의 this를 가리킵니다.
-* 생성자 함수 사용: 일반 함수는 생성자 함수로 사용할 수 있지만, 화살표 함수는 사용할 수 없습니다.
-* arguments 객체 사용: 일반 함수에서는 arguments 객체를 사용할 수 있지만, 화살표 함수에서는 사용할 수 없습니다.
 
-
-
-
+- this 바인딩: 일반 함수의 this는 동적으로 결정되지만, 화살표 함수의 this는 상위 스코프의 this를 가리킵니다.
+- 생성자 함수 사용: 일반 함수는 생성자 함수로 사용할 수 있지만, 화살표 함수는 사용할 수 없습니다.
+- arguments 객체 사용: 일반 함수에서는 arguments 객체를 사용할 수 있지만, 화살표 함수에서는 사용할 수 없습니다.

@@ -4,13 +4,11 @@ title: 연산자란?
 date: 2024-04-07 17:29 +0900
 description: 자바스크립트
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/4bca9465-c91f-48ab-92ed-0eef35542c0f
-category: coding
+category: 2024년도 공부내용
 tags: 연산자
 published: true
 sitemap: true
 ---
-
-
 
 # 자바스크립트 연산자에 대해.<br />
 
@@ -20,7 +18,8 @@ sitemap: true
 주로 사용되는 연산자들은 다음과 같습니다:
 
 ✤ 연산자의 종류 ✤
-````javascript 
+
+```javascript
     * 산술 연산자: 덧셈(+), 뺄셈(-), 곱셈(* ), 나눗셈(/), 나머지(%) 등의 연산을 수행합니다.
 
     * 대입 연산자: 변수에 값을 할당하는데 사용됩니다. 예를 들어, (=)는 오른쪽의 값을 왼쪽의 변수에 할당합니다.
@@ -40,7 +39,4 @@ sitemap: true
     * instanceof 연산자: 객체가 특정 클래스의 인스턴스인지 여부를 확인합니다.
 
     * 접근 연산자: 객체의 속성이나 배열의 요소에 접근할 때 사용됩니다. 점(.) 연산자와 대괄호([]) 연산자가 있습니다.
-````
-
-
-                
+```

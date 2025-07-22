@@ -4,16 +4,16 @@ title: break문 continue문이란?
 date: 2024-04-29 20:29 +0900
 description: 자바스크립트 데이터 제어하기(4)
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/281e55ed-b9ca-40bb-b34f-3bd487895aeb
-category: coding
+category: 2024년도 공부내용
 tags: break문 continue문
 published: true
 sitemap: true
 ---
 
-
 ## 프로그램의 흐름을 제어하기<br />
 
-### 01. break문이란?               
+### 01. break문이란?
+
 JavaScript에서의 break문은 반복문(for, while, do...while)이나 switch문을 빠져나오는 데 사용됩니다.
 break문을 만나면 가장 가까운 반복문이나 switch문을 즉시 종료하고 해당 반복문이나 switch문을 빠져나옵니다.
 break문은 주로 반복문 내에서 특정 조건을 만족했을 때 반복을 중지하고 루프를 탈출하는 데 사용됩니다.
@@ -23,16 +23,16 @@ switch문 내에서 break문을 사용하여 각 case문이 실행된 후에 swi
 
 ✤ break문 예시문 ✤
 
-````javascript 
+```javascript
 {
-    for (let i = 1; i < 10; i++) {
-        if (i == 5) {
-            break;
-        }
-        console.log(i);
+  for (let i = 1; i < 10; i++) {
+    if (i == 5) {
+      break;
     }
+    console.log(i);
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -43,8 +43,8 @@ switch문 내에서 break문을 사용하여 각 case문이 실행된 후에 swi
 </details>
 </div>
 
+### 02. continue문이란?
 
-### 02. continue문이란?               
 JavaScript에서의 continue문은 반복문(for, while, do...while)에서
 특정 조건이 충족될 때 현재 반복을 중지하고 다음 반복으로 넘어가는 데 사용됩니다.
 
@@ -56,17 +56,17 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 
 ✤ continue문 예시문 ✤
 
-````javascript 
+```javascript
 {
-    console.log("11. continue문")
-    for (let i = 1; i < 10; i++) {
-        if (i == 5) {
-            continue;
-        }
-        console.log(i);
+  console.log("11. continue문");
+  for (let i = 1; i < 10; i++) {
+    if (i == 5) {
+      continue;
     }
+    console.log(i);
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -83,18 +83,18 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 
 ## ✔️break문, continue문 문제 예제
 
-* 다음 코드를 실행했을 때 화면에 어떤 숫자들이 출력될까요?
+- 다음 코드를 실행했을 때 화면에 어떤 숫자들이 출력될까요?
 
-````javascript 
+```javascript
 {
-    for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     if (i % 2 === 0) {
-        continue;
+      continue;
     }
     console.log(i);
-    }
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -106,21 +106,20 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 </details>
 </div>
 
+- 다음 배열을 반복하면서 첫 번째로 5를 만날 때의 숫자 출력 결과는 무엇일까요?
 
-* 다음 배열을 반복하면서 첫 번째로 5를 만날 때의 숫자 출력 결과는 무엇일까요?
-
-````javascript 
+```javascript
 {
-    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    for (let num of arr) {
-        if (num === 5) {
-            console.log("5를 발견했습니다.");
-            break;
-        }
-        console.log(num);
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  for (let num of arr) {
+    if (num === 5) {
+      console.log("5를 발견했습니다.");
+      break;
     }
+    console.log(num);
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -132,23 +131,22 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 </details>
 </div>
 
+- 다음 코드를 실행했을 때 화면에 어떤 숫자들이 출력될까요?
 
-* 다음 코드를 실행했을 때 화면에 어떤 숫자들이 출력될까요?
-
-````javascript 
+```javascript
 {
-    for (let i = 1; i <= 100; i++) {
-        if (i === 30) {
-            console.log("30을 발견했습니다.");
-            break;
-        }
-        if (i % 3 !== 0) {
-            continue;
-        }
-        console.log(i);
+  for (let i = 1; i <= 100; i++) {
+    if (i === 30) {
+      console.log("30을 발견했습니다.");
+      break;
     }
+    if (i % 3 !== 0) {
+      continue;
+    }
+    console.log(i);
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -160,23 +158,22 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 </details>
 </div>
 
+- 다음 코드를 실행했을 때 화면에 어떤 숫자들이 출력될까요?
 
-* 다음 코드를 실행했을 때 화면에 어떤 숫자들이 출력될까요?
-
-````javascript 
+```javascript
 {
-    for (let i = 1; i <= 20; i++) {
-        if (i === 10) {
-            console.log("10을 발견했습니다.");
-            break;
-        }
-        if (i % 2 !== 0) {
-            continue;
-        }
-        console.log(i);
+  for (let i = 1; i <= 20; i++) {
+    if (i === 10) {
+      console.log("10을 발견했습니다.");
+      break;
     }
+    if (i % 2 !== 0) {
+      continue;
+    }
+    console.log(i);
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -188,19 +185,19 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 </details>
 </div>
 
-* 다음 배열을 반복하면서 첫 번째로 0보다 큰 숫자를 만날 때의 숫자 출력 결과는 무엇일까요?
+- 다음 배열을 반복하면서 첫 번째로 0보다 큰 숫자를 만날 때의 숫자 출력 결과는 무엇일까요?
 
-````javascript 
+```javascript
 {
-    const arr = [-3, 5, -2, 0, 10, -7];
-    for (let num of arr) {
-        if (num > 0) {
-            console.log(num);
-            break;
-        }
+  const arr = [-3, 5, -2, 0, 10, -7];
+  for (let num of arr) {
+    if (num > 0) {
+      console.log(num);
+      break;
     }
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -212,21 +209,20 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 </details>
 </div>
 
+- 다음 코드를 실행했을 때 화면에 어떤 숫자들이 출력될까요?
 
-* 다음 코드를 실행했을 때 화면에 어떤 숫자들이 출력될까요?
-
-````javascript 
+```javascript
 {
-    for (let i = 1; i <= 10; i++) {
-        if (i === 5) {
-            continue;
-        }
-        if (i > 5) {
-            console.log(i);
-        }
+  for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+      continue;
     }
+    if (i > 5) {
+      console.log(i);
+    }
+  }
 }
-````
+```
 
 <div class="result">
 <details>
@@ -238,7 +234,6 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 </details>
 </div>
 
-
 <br />
 <br />
 <br />
@@ -246,8 +241,3 @@ continue문은 주로 특정 조건을 만족하는 경우에 해당 반복을 �
 여기까지 break문, continue문에 대해 알아봤습니다.
 도움이 되셨길 바라며 이만 마치겠습니다.
 고생하셨습니다.🫶😊
-
-
-
-
-                

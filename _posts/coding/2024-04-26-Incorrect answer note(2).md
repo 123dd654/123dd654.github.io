@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 자바스크립트 오답노트(2) 
+title: 자바스크립트 오답노트(2)
 date: 2024-04-26 14:54 +0900
 description: 자바스크립트
 image: https://github.com/123dd654/123dd654.github.io/assets/161431124/7eee5dd9-7eb0-4edc-9c7b-07c9464f9946
-category: coding
+category: 2024년도 공부내용
 tags: 자바스크립트 오답노트 문제풀이
 published: true
 sitemap: true
@@ -14,19 +14,19 @@ sitemap: true
 
 ### 01. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    function func(){
-        let a = [];
+  function func() {
+    let a = [];
 
-        for(i=1; i<=5; i++){
-            a += [i];
-        }
-        console.log(a);
+    for (i = 1; i <= 5; i++) {
+      a += [i];
     }
-    func();
-}   
-````
+    console.log(a);
+  }
+  func();
+}
+```
 
 이 JavaScript 코드는 함수 func를 정의하고, 그 안에서 배열 a를 선언하고 초기화합니다.
 그런 다음 1부터 5까지의 숫자를 배열 a에 추가합니다. 그리고 배열 a를 콘솔에 출력합니다.
@@ -40,33 +40,32 @@ sitemap: true
 
 <span style="background-color:#fff5b1"> 그 결과, 콘솔에는 [1, 2, 3, 4, 5]가 출력됩니다.</span>
 
-
 ### 02. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    const arr = [100, 200, 300, 400, 500];
+  const arr = [100, 200, 300, 400, 500];
 
-    const text1 = arr.join("*");
-    const text3 = arr.join("");
-    const text4 = arr.join(" ");
+  const text1 = arr.join("*");
+  const text3 = arr.join("");
+  const text4 = arr.join(" ");
 
-    console.log(text1);
-    console.log(text3);
-    console.log(text4);
-}   
-````
+  console.log(text1);
+  console.log(text3);
+  console.log(text4);
+}
+```
 
 이 JavaScript 코드는 배열 arr을 사용하여 세 가지 다른 방식으로 문자열을 생성합니다.
 그런 다음 각 문자열을 콘솔에 출력합니다.
 
-arr.join("*"): 배열의 각 요소를 별표(*)로 구분하여 하나의 문자열로 합칩니다.
+arr.join("_"): 배열의 각 요소를 별표(_)로 구분하여 하나의 문자열로 합칩니다.
 arr.join(""): 배열의 각 요소를 구분 없이 연속된 문자열로 합칩니다.
 arr.join(" "): 배열의 각 요소를 공백으로 구분하여 하나의 문자열로 합칩니다.
 
 각각의 결과를 살펴보겠습니다:
 
-text1에는 배열의 각 요소가 별표(*)로 구분된 문자열이 할당됩니다.
+text1에는 배열의 각 요소가 별표(\*)로 구분된 문자열이 할당됩니다.
 text3에는 배열의 각 요소가 구분 없이 연속된 문자열로 합쳐진 문자열이 할당됩니다.
 text4에는 배열의 각 요소가 공백으로 구분된 문자열이 할당됩니다.
 
@@ -76,20 +75,20 @@ text4에는 배열의 각 요소가 공백으로 구분된 문자열이 할당�
 100 200 300 400 500   
 </span>
 
-
 ### 03. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let a, b = 10;
+  let a,
+    b = 10;
 
-    for(let i=0; i<5; i++){
-        a = i;
-        b -= a;
-    }
-    console.log(a, b)
+  for (let i = 0; i < 5; i++) {
+    a = i;
+    b -= a;
+  }
+  console.log(a, b);
 }
-````
+```
 
 변수를 선언하고 초기화할 때 let a, b = 10;과 같이 사용하면 a는 undefined가 됩니다.
 JavaScript에서는 이처럼 변수를 선언할 때 초기값을 주는 경우, 초기값이 제공되지 않은 변수는 undefined로 초기화됩니다.
@@ -102,24 +101,25 @@ JavaScript에서는 이처럼 변수를 선언할 때 초기값을 주는 경우
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 마지막 반복에서의 a 값인 4와 b 값인 0이 출력됩니다.</span>
 
-
 ### 04. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    function func(){
-        let i = 20, j = 20, k = 30;
-        i /= j;
-        j -= i;
-        k %= j;
+  function func() {
+    let i = 20,
+      j = 20,
+      k = 30;
+    i /= j;
+    j -= i;
+    k %= j;
 
-        console.log(i);
-        console.log(j);
-        console.log(k);
-    }
-    func();
+    console.log(i);
+    console.log(j);
+    console.log(k);
+  }
+  func();
 }
-````
+```
 
 이 JavaScript 코드는 함수 func를 정의하고,
 그 안에서 세 개의 변수 i, j, k를 선언하고 초기화합니다.
@@ -136,21 +136,19 @@ k %= j;: 이전 단계에서 j는 19이므로, k를 j로 나눈 나머지를 구
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 1 19 11</span>
 
-
 ### 05. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
-{       
-    let k = 1;
-    let temp;
-    for(let i=0; i<=3; i++){
-            temp = k;
-            k++;
-            console.log(temp + "번");
-    }    
+```javascript
+{
+  let k = 1;
+  let temp;
+  for (let i = 0; i <= 3; i++) {
+    temp = k;
+    k++;
+    console.log(temp + "번");
+  }
 }
-  
-````
+```
 
 이 JavaScript 코드는 변수 k를 초기값 1로 설정한 후, 반복문을 사용하여 k 값을 증가시키면서 temp 변수에 현재의 k 값을 저장하고 출력합니다.
 
@@ -163,16 +161,16 @@ k %= j;: 이전 단계에서 j는 19이므로, k를 j로 나눈 나머지를 구
 
 ### 06. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let num1 = 3;
-    let num2 = 7;
-    if(++num1 > 5 || num2++ < 1){
-            console.log(num1);
-    }
-    console.log(num2)
+  let num1 = 3;
+  let num2 = 7;
+  if (++num1 > 5 || num2++ < 1) {
+    console.log(num1);
+  }
+  console.log(num2);
 }
-````
+```
 
 먼저, num1 변수에는 3이, num2 변수에는 7이 할당됩니다.
 if 문에서는 두 개의 조건이 있습니다.
@@ -188,19 +186,18 @@ num2는 1이 증가되어 8이 됩니다.
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 8</span>
 
-
 ### 07. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let num = [1, 5, 1, 2, 7, 5];
-    for(let i=0; i<6; i++){
-            if((i+2) % 2 == 0){
-                    console.log(num[i]);
-            }
+  let num = [1, 5, 1, 2, 7, 5];
+  for (let i = 0; i < 6; i++) {
+    if ((i + 2) % 2 == 0) {
+      console.log(num[i]);
     }
+  }
 }
-````
+```
 
 num이라는 이름의 배열에 [1, 5, 1, 2, 7, 5]가 할당됩니다.
 
@@ -212,28 +209,27 @@ i + 2는 현재 반복 인덱스 i에 2를 더한 값입니다.
 따라서 조건문은 항상 참이 되어 console.log(num[i])가 실행됩니다.
 console.log(num[i])는 현재 인덱스 i에 해당하는 num 배열의 요소를 출력합니다.
 
-결과적으로 루프를 통해 num 배열의 요소를 출력하게 되는데, 조건에 따라서 출력되는 요소가 결정됩니다. 
+결과적으로 루프를 통해 num 배열의 요소를 출력하게 되는데, 조건에 따라서 출력되는 요소가 결정됩니다.
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 1 1 7</span>
 
-
 ### 08. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-    for(let i=0; i<=9; i++){
-            switch(num[i] % 2){
-                    case 1:
-                        console.log(num[i]);
-                        break;
-                    default:
-                        console.log("*");
-            }
+  for (let i = 0; i <= 9; i++) {
+    switch (num[i] % 2) {
+      case 1:
+        console.log(num[i]);
+        break;
+      default:
+        console.log("*");
     }
-}  
-````
+  }
+}
+```
 
 이 JavaScript 코드는 배열 num에 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]를 할당하고,
 반복문을 사용하여 배열의 각 요소를 검사합니다. 각 요소를 2로 나눈 나머지에 따라 switch 문을 사용하여 처리합니다.
@@ -244,24 +240,23 @@ console.log(num[i])는 현재 인덱스 i에 해당하는 num 배열의 요소�
 네 번째 반복에서 num[3]은 3이므로 3을 2로 나눈 나머지는 1입니다. 이는 case 1: 블록에 해당되어 콘솔에 3이 출력됩니다.
 이와 같은 방식으로 나머지 요소들도 처리됩니다.
 
-<span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: * 1 * 3 * 5 * 7 * 9</span>
-
+<span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: _ 1 _ 3 _ 5 _ 7 \* 9</span>
 
 ### 09. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let cnt = 0;
-    let sum = 0;
-    for(let i=0; i<=7; i++){
-            if(i%2 == 1){
-                    cnt++;
-                    sum += i;
-            }
+  let cnt = 0;
+  let sum = 0;
+  for (let i = 0; i <= 7; i++) {
+    if (i % 2 == 1) {
+      cnt++;
+      sum += i;
     }
-    console.log(cnt + ", "+sum/2);
+  }
+  console.log(cnt + ", " + sum / 2);
 }
-````
+```
 
 변수 cnt와 sum이 각각 0으로 초기화됩니다.
 for 루프에서 i가 0부터 7까지 증가하면서 반복됩니다.
@@ -274,21 +269,22 @@ sum에는 홀수의 합이 저장되어 있으므로 이를 2로 나누어 평�
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 4 8</span>
 
-
 ### 10. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let a=1, b=1, num;
+  let a = 1,
+    b = 1,
+    num;
 
-    for(let i=0; i<6; i++){
-        num = a + b;
-        a = b;
-        b = num;
-    }
-    console.log(num)
-}  
-````
+  for (let i = 0; i < 6; i++) {
+    num = a + b;
+    a = b;
+    b = num;
+  }
+  console.log(num);
+}
+```
 
 이 JavaScript 코드는 변수 a와 b를 초기값 1로 설정하고,
 반복문을 사용하여 피보나치 수열의 6번째 항을 계산합니다.
@@ -307,18 +303,17 @@ sum에는 홀수의 합이 저장되어 있으므로 이를 2로 나누어 평�
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 21</span>
 
-
 ### 11. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let a, b, result;
-    a = 7, b = 4
-    result = a | b;
+  let a, b, result;
+  (a = 7), (b = 4);
+  result = a | b;
 
-    console.log(result)
-}  
-````
+  console.log(result);
+}
+```
 
 이 JavaScript 코드는 비트 OR 연산자(|)를 사용하여 변수 a와 b의 비트를 OR 연산한 후
 그 결과를 result 변수에 저장하고, 그 값을 콘솔에 출력합니다.
@@ -328,37 +323,37 @@ sum에는 홀수의 합이 저장되어 있으므로 이를 2로 나누어 평�
 
 변수 a가 7이고 이를 이진수로 나타내면 0111이며, 변수 b가 4이고 이를 이진수로 나타내면 0100입니다.
 
-````
+```
   0111
 | 0100
 ------
   0111 (이진수에서 1은 true를 나타냄)
-````
+```
 
 따라서 a | b의 결과는 7이 됩니다.
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 7</span>
 
-
 ### 12. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    function solution(a, b, c){
-            let answer = "YES", max;
-            let total = a + b + c;
-    
-            if(a > b) max = a;
-            else max = b;
-            if(c > max) max = c;
-            if(total-max <= max) answer = "NO"; 
-            
-            return answer;
-    }
+  function solution(a, b, c) {
+    let answer = "YES",
+      max;
+    let total = a + b + c;
 
-    console.log(solution(53, 93, 107));
+    if (a > b) max = a;
+    else max = b;
+    if (c > max) max = c;
+    if (total - max <= max) answer = "NO";
+
+    return answer;
+  }
+
+  console.log(solution(53, 93, 107));
 }
-````
+```
 
 이 JavaScript 코드는 세 개의 숫자 a, b, c를 매개변수로 받는 함수 solution을 정의하고 있습니다.
 이 함수는 주어진 세 개의 숫자를 이용하여 삼각형이 될 수 있는지 여부를 반환합니다.
@@ -375,21 +370,20 @@ sum에는 홀수의 합이 저장되어 있으므로 이를 2로 나누어 평�
 
 <span style="background-color:#fff5b1">따라서 answer는 "YES"입니다.</span>
 
-
 ### 13. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    function solution(a, b, c){
-            let answer;
-            if(a < b) answer = a;
-            else answer = b;
-            if(c <= answer) answer = c; 
-            return answer;
-    }
-    console.log(solution(15, 12, 11));
+  function solution(a, b, c) {
+    let answer;
+    if (a < b) answer = a;
+    else answer = b;
+    if (c <= answer) answer = c;
+    return answer;
+  }
+  console.log(solution(15, 12, 11));
 }
-````
+```
 
 주어진 JavaScript 코드는 세 개의 숫자 a, b, c를 매개변수로 받는 함수 solution을 정의하고 있습니다.
 이 함수는 세 숫자 중 가장 작은 값을 반환합니다.
@@ -406,23 +400,22 @@ sum에는 홀수의 합이 저장되어 있으므로 이를 2로 나누어 평�
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 11</span>
 
-
 ### 14. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    function solution(day, arr){
-            let answer = 0;
-            for(let x of arr){
-                    if(x % 10 == day) answer++;
-            }
-            return answer;
+  function solution(day, arr) {
+    let answer = 0;
+    for (let x of arr) {
+      if (x % 10 == day) answer++;
     }
-    
-    arr = [25, 23, 11, 47, 53, 17, 33, 40];
-    console.log(solution(0, arr));
-} 
-````
+    return answer;
+  }
+
+  arr = [25, 23, 11, 47, 53, 17, 33, 40];
+  console.log(solution(0, arr));
+}
+```
 
 위의 코드에서 solution 함수는 주어진 배열에서 각 요소를 10으로 나눈 나머지가 주어진 day와 일치하는 경우의 수를 찾는 함수입니다.
 
@@ -433,19 +426,17 @@ for...of 반복문을 사용하여 배열 arr의 각 요소 x에 대해 순차�
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 1</span>
 
-
 ### 15. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let a, b, result;
-    a = 7, b = 4
-    result = a & b;
+  let a, b, result;
+  (a = 7), (b = 4);
+  result = a & b;
 
-    console.log(result);
-}   
-````
-
+  console.log(result);
+}
+```
 
 주어진 JavaScript 코드는 비트 AND 연산자(&)를 사용하여 변수 a와 b의 비트를
 AND 연산한 후 그 결과를 result 변수에 저장하고, 그 값을 콘솔에 출력합니다.
@@ -455,28 +446,29 @@ AND 연산한 후 그 결과를 result 변수에 저장하고, 그 값을 콘솔
 
 변수 a가 7이고 이를 이진수로 나타내면 0111이며, 변수 b가 4이고 이를 이진수로 나타내면 0100입니다.
 
-````
+```
   0111
 & 0100
 ------
   0100 (이진수에서 1은 true를 나타냄)
-````
+```
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 4</span>
 
-
 ### 16. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let a = 6, b = 9, c = 3, result;
-    result = ++a + b++ + ++c;
+  let a = 6,
+    b = 9,
+    c = 3,
+    result;
+  result = ++a + b++ + ++c;
 
-    console.log(result);
-    console.log(a+b+c);
+  console.log(result);
+  console.log(a + b + c);
 }
-
-````
+```
 
 주어진 JavaScript 코드는 변수 a, b, c에 각각 6, 9, 3을 할당하고, 다양한 증가 연산을 수행한 후 그 결과를 출력합니다.
 
@@ -490,20 +482,20 @@ b++는 후위 증가 연산자이므로 b의 값이 먼저 평가된 후에 1이
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 20 21</span>
 
-
 ### 17. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let a, b = 10;
+  let a,
+    b = 10;
 
-    for(let i=0; i<5; i++){
-        a = i;
-        b -= a;
-    }
-    console.log(a, b)
-}  
-````
+  for (let i = 0; i < 5; i++) {
+    a = i;
+    b -= a;
+  }
+  console.log(a, b);
+}
+```
 
 주어진 JavaScript 코드는 변수 a와 b를 선언하고,
 b에는 초기값으로 10을 할당한 후 반복문을 사용하여 연산을 수행한 후 결과를 출력합니다.
@@ -520,46 +512,43 @@ b에는 초기값으로 10을 할당한 후 반복문을 사용하여 연산을 
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 4 0</span>
 
-
 ### 18. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let num = 10;
-    num += 2;
-    num -= 3;
-    num *= 5;
-    num /= 5;
-    num %= 9;
-    
-    console.log(num)
-}   
-````
+  let num = 10;
+  num += 2;
+  num -= 3;
+  num *= 5;
+  num /= 5;
+  num %= 9;
+
+  console.log(num);
+}
+```
 
 주어진 JavaScript 코드는 변수 num을 초기값으로 10을 설정한 후에 여러 산술 연산을 수행하고 결과를 출력합니다.
 
 num += 2;는 num에 2를 더한 값을 num에 할당합니다. 따라서 num은 12가 됩니다.
 num -= 3;는 num에서 3을 뺀 값을 num에 할당합니다. 따라서 num은 9가 됩니다.
-num *= 5;는 num에 5를 곱한 값을 num에 할당합니다. 따라서 num은 45가 됩니다.
+num \*= 5;는 num에 5를 곱한 값을 num에 할당합니다. 따라서 num은 45가 됩니다.
 num /= 5;는 num을 5로 나눈 값을 num에 할당합니다. 따라서 num은 9가 됩니다.
 num %= 9;는 num을 9로 나눈 나머지를 num에 할당합니다. 따라서 num은 0이 됩니다.
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 0</span>
 
-
 ### 19. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let num = [1, 5, 1, 2, 7, 5];
-    for(let i=0; i<6; i++){
-        if((i+2) % 2 == 0){
-            console.log(num[i]);
-        }
+  let num = [1, 5, 1, 2, 7, 5];
+  for (let i = 0; i < 6; i++) {
+    if ((i + 2) % 2 == 0) {
+      console.log(num[i]);
     }
-}   
-````
-
+  }
+}
+```
 
 주어진 JavaScript 코드는 배열 num에 [1, 5, 1, 2, 7, 5]를 할당하고,
 반복문을 사용하여 배열의 요소를 순회하면서 특정 조건을 만족하는 요소를 출력합니다.
@@ -571,27 +560,26 @@ num %= 9;는 num을 9로 나눈 나머지를 num에 할당합니다. 따라서 n
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 1 1 7</span>
 
-
 ### 20. 다음을 보고 결괏값을 작성하시오!
 
-````javascript
+```javascript
 {
-    let data = [10, 6, 7, 9, 3];
-    let temp;
+  let data = [10, 6, 7, 9, 3];
+  let temp;
 
-    for(let i=0; i<4; i++){
-        for(let j=i+1; j<5; j++){
-            if(data[i] > data[j]){
-                temp = data[i];
-                data[i] = data[j];
-                data[j] = temp;
-            }
-        }
+  for (let i = 0; i < 4; i++) {
+    for (let j = i + 1; j < 5; j++) {
+      if (data[i] > data[j]) {
+        temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+      }
     }
+  }
 
-    console.log(data) 
+  console.log(data);
 }
-````
+```
 
 주어진 JavaScript 코드는 버블 정렬(bubble sort) 알고리즘을 사용하여 배열 data를 오름차순으로 정렬하는 작업을 수행합니다.
 
@@ -607,15 +595,3 @@ num %= 9;는 num을 9로 나눈 나머지를 num에 할당합니다. 따라서 n
 이 과정을 배열의 길이 - 1만큼 반복하면 배열은 오름차순으로 정렬됩니다.
 
 <span style="background-color:#fff5b1">따라서 콘솔에는 다음과 같이 출력됩니다: 3 6 7 9 10</span>
-
-
-
-
-
-
-
-
-
-
-
-                
