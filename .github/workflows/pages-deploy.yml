@@ -39,7 +39,7 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Upload static site to Pages
-        uses: actions/upload-pages-artifact@v2 # <-- 🔁 v1 → v2 수정됨
+        uses: actions/upload-artifact@v4 # <-- 수정: v1 -> v4로 직접 업그레이드
         with:
           path: _site
 
